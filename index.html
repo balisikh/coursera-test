@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F + F Watch</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Overpass:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        /* My custom styles */
+        .nav__sections-link--highlight {
+            font-weight: bold; /* Example: Highlighted font weight */
+            color: #000000; /* Example: Highlighted text color (black) */
+            /* Add additional styles as needed */
+        }
+        .tagline-container {
+            text-align: left; /* Align taglines to left if needed */
+        }
+        
+        .tagline {
+            margin-bottom: 20px; /* Add bottom margin between taglines */
+        }
+        
+        .tagline-text {
+            font-size: 28px; /* Adjust font size for tagline text */
+            line-height: 1.5; /* Set line height for better readability */
+            color: #333; /* Set text color for taglines */
+        }
+        
+        .uppercase {
+            text-transform: uppercase; /* Convert text to uppercase */
+            font-weight: normal; /* Set normal font weight for uppercase text */
+        }
+        
+        .tagline-text strong {
+            font-weight: bold; /* Apply bold font weight to the last word */
+        }
+
+        /* Styles for pricing card top section */
+        .pricing__card-top {
+            font-size: 19px; /* Set font size */
+            border-bottom: 2px solid black; /* Add 2 pixels solid colour black at the top border */
+            padding-bottom: 10px; /* Apply top padding with 10 pixels*/
+        }
+
+        /* Styles for pricing card bottom section */
+        .pricing__card-bottom {
+            font-size: 19px; /* Set font size */
+            border-bottom: 2px solid black; /* Add 2 pixels solid colour black at the bottom border */
+            padding-bottom: 10px; /* Apply bottom padding with 10 pixels*/
+        }
+
+        #features-breakdown {
+            margin-top: 30px;
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="nav__sections-list">
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link" href="#home">HOME</a>
+            </li>
+        </ul>
+        <a class="nav__logo" href="/">
+            <img class="nav__logo-img" src="images/F+F-logo-black.svg" alt="F+F Main Logo">
+        </a>
+        <ul class="nav__sections-list">
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link nav__sections-link--highlight" href="#features">FEATURES</a>
+            </li>
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link" href="#pricing">PRICES</a>
+            </li>
+        </ul>
+    </div>
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__column">
+                <h1 class="header__title">Form Over Function?</h1>
+                <h2 class="header__subtitle">Why Choose?</h2>
+                <p class="header__copy">
+                    At <span class="header__copy--bold">F+F</span>, we believe that you shouldn’t have to pick between a stunning product and one that works. <span class="header__copy--bold">No compromises.</span> Just an outstanding wristwatch, built to last.
+                </p>
+                <div class="tagline-container">
+    <div class="tagline">
+        <span class="tagline-text">Minimal, yet <strong class="uppercase">sharp</strong></span>
+    </div>
+    <div class="tagline">
+        <span class="tagline-text">Modern, yet <strong class="uppercase">timeless</strong></span>
+    </div>
+</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="features" class="features">
+            <div class="features__container">
+                <div class="features__column">
+                    <h3 class="features__title">Features:</h3>
+                    <ul class="features__list">
+                        <section id="features-breakdown">
+                            <article>
+                                <li class="features__list-item">A Massive 1.5 Inch Touch Screen</li>
+                                <p>Size is what matters when it comes to a smart watch screen. Read all your notifications with plenty of space.</p>
+
+                                <li class="features__list-item">A Range of Watch Face Backgrounds to Choose From</li>
+                                <p>Personalize your watch face to match your own unique style with many combinations of background images, clock styles, and colors.</p>
+                        
+                                <li class="features__list-item">Water Resistant up to 7 Feet</li>
+                                <p>IP68 Weatherproof rating. Fit to withstand dust, dirt, and sand and resistant to submersion up to a maximum depth of 7 feet underwater for up to 30 minutes.</p>
+                        
+                                <li class="features__list-item">Step Tracking, Heart Rate & Sleep Monitoring</li>
+                                <p>Check out your step progress during the day with the in-app tracker. Keep an eye on your heart rate easily and conveniently. And when you are ready for your head to hit the pillow, track that too.</p>
+                        
+                                <li class="features__list-item">Notifications from Popular Apps</li>
+                                <p>Get all your notifications from all your accounts conveniently on your wrist.</p>
+                        
+                                <li class="features__list-item">10 Days of Battery Life</li>
+                                <p>With a battery capacity up to 300mAh, you will have no problem getting through the week with plenty of charge to spare.</p>
+                            </article>
+                        </section>
+                    </ul>
+                </div>
+
+                <div class="features__column">
+                    <img class="features__image" src="images/watch-side.png" alt="Side view of F+F Watch">
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div id="pricing" class="pricing">
+            <div class="pricing__container">
+                <h3 class="pricing__title">Pricing:</h3>
+                <div class="pricing__cards">
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 1:</h4>
+                            <p class="pricing__card-price">$89.00</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <p>Includes:</p>
+                            <ul>
+                                <li>Watch face</li>
+                                <li>Interchangeable band (white)</li>
+                                <li>Charging cable</li>
+                           </ul>
+                        </div>
+                    </div>
+
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 2:</h4>
+                            <p class="pricing__card-price">$99.00</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <p>Includes everything in Package 1, plus:</p>
+                            <ul>
+                                <li>Interchangeable band (black)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 3:</h4>
+                            <p class="pricing__card-price">$109.00</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <p>Includes everything in Package 2, plus:</p>
+                            <ul>
+                                <li>Extra charging cable</li>
+                                <li>Warranty for 5 years</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="nav-footer">
+            <ul class="nav-footer__list">
+                <li class="nav-footer__list-item">
+                    <a href="mailto:info@ff.com" class="footer__email">info@ff.com</a>
+                </li>
+                <li class="nav-footer__list-item">
+                    <a class="nav-footer__link" href="./index.html">
+                        <img class="nav-footer__logo" src="images/F+F-logo-black.svg" alt="F+F Logo / Link to Home">
+                    </a>
+                </li>
+                <li class="nav-footer__list-item">
+                    <a href="tel:8671024337" class="footer__phone">867 - 102 - 4337</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

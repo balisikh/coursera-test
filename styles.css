@@ -1,0 +1,284 @@
+/* Global styles for HTML and body */
+html, body {
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; /* Set a base font size for easier scaling */
+}
+
+/* Styles for paragraph elements */
+p {
+  font-family: "Overpass", Arial, Helvetica, sans-serif; /* Apply font family to paragraphs */
+  font-size: 26px; /* Set font size for paragraphs */
+}
+
+/* Styles for unordered lists, ordered lists, and list items */
+ul, ol, li {
+  font-family: "Overpass", Arial, Helvetica, sans-serif; /* Apply font family to lists and list items */
+  font-size: 19px; /* Set font size for lists and list items */
+}
+
+/* Styles for links, paragraphs, and specific elements within navigation */
+.nav a, .nav-footer a, .nav p, .nav-footer p {
+  font-size: 12px; /* Set font size for navigation links and paragraphs */
+}
+
+/* Styles for navigation section */
+.nav {
+  font-family: "Chivo", Arial, Helvetica, sans-serif; /* Set font family for navigation */
+  font-size: 12px; /* Set font size for navigation */
+  font-weight: normal; /* Set normal font weight */
+  padding: 0 5%; /* Apply padding to navigation */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: stretch; /* Stretch items to fill container height */
+  height: 100%; /* Set height to fill parent container */
+}
+
+/* Styles for navigation lists */
+.nav__pages-list, .nav__sections-list {
+  list-style: none; /* Remove list bullets */
+  padding-left: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox layout */
+  font-weight: bold; /* Set font weight for navigation lists */
+}
+
+/* Styles for navigation list items */
+.nav__pages-list-item, .nav__sections-list-item {
+  width: 92px; /* Set width for navigation list items */
+  text-align: center; /* Center-align text */
+}
+
+/* Styles for navigation links */
+.nav__pages-link, .nav__sections-link {
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Set font weight for links */
+  color: #000000; /* Set text color for links */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center-align content horizontally */
+  align-items: center; /* Center-align content vertically */
+  height: 100%; /* Set height to fill parent container */
+}
+
+/* Styles for active, hover, and focus states of navigation links */
+.nav__pages-link:active, .nav__pages-link:hover, .nav__pages-link:focus, 
+.nav__sections-link:active, .nav__sections-link:hover, .nav__sections-link:focus {
+  text-decoration: none; /* Remove underline on interaction */
+  color: #000000; /* Set text color on interaction */
+}
+
+/* Styles for active and highlighted states of navigation links */
+.nav__pages-link--active, .nav__pages-link--highlight,
+.nav__sections-link--active, .nav__pages-link:hover, .nav__sections-link:hover {
+  background: black; /* Set background color */
+  color: white; /* Set text color */
+
+}
+
+/* Styles for logo image within navigation */
+.nav__logo-img {
+  padding: 15px; /* Apply padding to logo image */
+}
+
+/* Styles for header section */
+.header {
+  padding: 0 5%; /* Apply padding to header */
+  background: url("images/watch-front.png") 0% 50%/cover no-repeat; /* Set background image */
+  height: calc(100vh - 80px); /* Calculate height based on viewport height */
+}
+
+/* Styles for header container */
+.header__container {
+  padding: 0 5%; /* Apply padding to header container */
+  width: 90%; /* Set width */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  height: 100%; /* Set height to fill parent container */
+  justify-content: center; /* Center-align content vertically */
+}
+
+/* Styles for header column */
+.header__column {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center-align content vertically */
+}
+
+/* Styles for header title */
+.header__title {
+  font-family: "Chivo", Arial, Helvetica, sans-serif; /* Set font family for title */
+  font-size: 36px; /* Set font size for title */
+  font-weight: normal; /* Set normal font weight */
+  text-transform: uppercase; /* Convert text to uppercase */
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for header subtitle */
+.header__subtitle {
+  font-family: "Chivo", Arial, Helvetica, sans-serif; /* Set font family for subtitle */
+  font-size: 36px; /* Set font size for subtitle */
+  font-weight: bold; /* Set bold font weight */
+  text-transform: uppercase; /* Convert text to uppercase */
+  margin: 0 0 90px; /* Apply margin */
+}
+
+/* Styles for header copy, tagline, and taglines within header */
+.header__copy, .header__tagline, .tagline{
+  width: 27%; /* Set width */
+  font-family: "Overpass", Arial, Helvetica, sans-serif; /* Set font family */
+  font-size: 26px; /* Set font size */
+  margin-top: 20px; /* Add space between taglines and previous content */
+}
+
+/* Styles for bold text within header copy and tagline */
+.header__copy--bold, .header__tagline--bold {
+  font-weight: bold; /* Set bold font weight */
+}
+
+/* Styles for uppercase text within header copy and tagline */
+.header__copy--uppercase, .header__tagline--uppercase {
+  text-transform: uppercase; /* Convert text to uppercase */
+  font-weight: normal; /* Set normal font weight for uppercase text */
+}
+
+/* Styles for header copy */
+.header__copy {
+  margin: 0 0 90px; /* Apply margin */
+}
+
+/* Styles for header tagline */
+.header__tagline {
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for features section */
+.features {
+  padding: 0 5%; /* Apply padding to features section */
+  background: #F4EEE5; /* Set background color */
+  padding-top: 5%; /* Apply top padding */
+  padding-bottom: 5%; /* Apply bottom padding */
+}
+
+/* Styles for features container */
+.features__container {
+  padding: 0 5%; /* Apply padding to features container */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+  background: white; /* Set background color */
+}
+
+/* Styles for features column */
+.features__column {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center-align content vertically */
+}
+
+/* Styles for features title */
+.features__title {
+  font-family: "Chivo", Arial, Helvetica, sans-serif; /* Set font family for title */
+  font-size: 32px; /* Set font size for title */
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for features list items */
+.features__list-item {
+  font-family: "Overpass", Arial, Helvetica, sans-serif; /* Set font family for list items */
+  font-size: 26px; /* Set font size for list items */
+}
+
+/* Styles for pricing section */
+.pricing {
+  padding: 0 5%; /* Apply padding to pricing section */
+  background: #E7E6E5; /* Set background color */
+  padding-top: 5%; /* Apply top padding */
+  padding-bottom: 5%; /* Apply bottom padding */
+}
+
+/* Styles for pricing container */
+.pricing__container {
+  padding: 0 5%; /* Apply padding to pricing container */
+}
+
+/* Styles for pricing title */
+.pricing__title {
+  font-family: "Chivo", Arial, Helvetica, sans-serif; /* Set font family for title */
+  font-size: 32px; /* Set font size for title */
+  margin: 0 0 30px; /* Apply margin */
+}
+
+/* Styles for pricing cards */
+.pricing__cards {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+}
+
+/* Styles for pricing card */
+.pricing__card {
+  background: #FFFFFF; /* Set background color */
+  padding: 30px; /* Apply padding */
+  width: 25%; /* Set width */
+}
+
+/* Styles for pricing card title */
+.pricing__card-title {
+  margin: 0; /* Remove default margin */
+  font-family: "Overpass", Arial, Helvetica, sans-serif; /* Set font family for title */
+  font-weight: normal; /* Set normal font weight */
+  font-size: 19px; /* Set font size for title */
+}
+
+/* Styles for pricing card price */
+.pricing__card-price {
+  font-family: "Chivo", Arial, Helvetica, sans-serif; /* Set font family for price */
+  font-size: 62px; /* Set font size for price */
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for pricing card bottom section paragraphs and lists */
+.pricing__card-bottom p, .pricing__card-bottom ol, .pricing__card-bottom ul li {
+  font-size: 19px; /* Set font size */
+}
+
+/* Styles for footer navigation section */
+.nav-footer {
+  padding: 0 5%; /* Apply padding to footer navigation */
+  font-family: "Chivo", Arial, Helvetica, sans-serif; /* Set font family */
+  background: #E2F6F5; /* Set background color */
+}
+
+/* Styles for footer navigation list */
+.nav-footer__list {
+  list-style: none; /* Remove list bullets */
+  padding-left: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: stretch; /* Stretch items to fill container height */
+  height: 100%; /* Set height to fill parent container */
+}
+
+/* Styles for footer navigation list items */
+.nav-footer__list-item {
+  align-self: center; /* Align items vertically */
+}
+
+/* Styles for footer navigation links */
+.nav-footer__link {
+  text-decoration: none; /* Remove underline from links */
+  color: #000000; /* Set text color */
+}
+
+/* Interaction styles for footer navigation links */
+.nav-footer__link:hover, .nav-footer__link:active, .nav-footer__link:focus {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Styles for logo image within footer navigation */
+.nav-footer__logo {
+  padding: 15px; /* Apply padding to logo image */
+}
+
+/*# sourceMappingURL=styles.css.map */
